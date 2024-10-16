@@ -85,11 +85,9 @@ body {
 .card {
     margin: 15px 0;
     min-height:200px;
-    max-height: 200px;
     border: 1px solid rgb(0 0 0 / .05);
     border-radius: 15px;
     box-shadow: 0px 0px 2px rgba(196, 202, 218, 0.651);
-
 }
 .card-body{
     display: flex;
@@ -162,14 +160,26 @@ body {
 }
 .chart-container{
     border-top: 2px dotted #B6B6B6;
-    height: fit-content;
+    max-height: 68px;
     overflow: hidden;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    padding: 0;
 }
-.btn-primary {
-    background-color: #17a2b8;
-    border: none;
+.create-offer-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8ED;
+    color: #17C653;
+    width:fit-content ;
+    border-radius: 6px;
+    padding: 3px 15px;
+    font-size: 14px;
+    font-weight: 600;
 }
+.create-offer-btn:hover{
+    background-color: #f8f8f8;
+    border: 1px solid #E8E8ED;
+    color: #17C653;
+} 
 
 .activity-feed {
     background-color: #fff;
