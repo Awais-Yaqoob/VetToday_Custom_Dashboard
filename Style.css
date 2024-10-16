@@ -100,7 +100,7 @@ body {
 }
 
 .card-title {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600;
     margin: 0;
     color: #252F4A;
@@ -181,21 +181,97 @@ body {
     color: #17C653;
 } 
 
-.activity-feed {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
+.table {
+    margin-bottom: 0;
 }
 
-.activity-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+.table thead tr{
+    font-size: 14px;
+    color: #979DAE;
+    background-color: #F9FAFB;
+}
+.table thead th{
+    border: none;
+    background-color: #F9FAFB;
+
+}
+.table thead th:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.table thead th:last-child{
+    border-radius: 0px 10px 10px 0px;
 }
 
-.activity-item:last-child {
+.table tbody td {
+    border-top: none;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.table tbody tr:last-child {
     border-bottom: none;
+}
+
+.text-muted {
+    color: #979DAE !important;
+    font-size: 13px;
+}
+
+.btn-sm {
+    padding: 4px 12px;
+}
+
+.btn-success {
+    background-color: #F0FDF4;
+    color: #16A34A;
+    border-color: #F0FDF4;
+    font-size: 14px;
+    font-weight: 600;
+    width: 90px;
+}
+
+.btn-success:hover {
+    background-color: #F0FDF4;
+    color: #16A34A;
+    border-color: #F0FDF4;
+}
+
+.btn-info {
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border-color: #EFF6FF;
+    font-weight: 600;
+    width: 90px;
+}
+.btn-info:hover {
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border-color: #EFF6FF;
+}
+
+
+.btn-primary {
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border-color: #EFF6FF;
+}
+
+.btn-secondary {
+    background-color: #E5E7EB;
+    color: #6B7280;
+    border-color: #E5E7EB;
+}
+
+img.rounded-circle {
+    width: 40px;
+    height: 40px;
+}
+.dropdown-toggle{
+    border: 1px solid #DDDDDD;
+    color: #979DAE;
+    font-size: 14px;
 }
 
 .reviews-section {

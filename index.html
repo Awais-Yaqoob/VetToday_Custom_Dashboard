@@ -126,31 +126,87 @@
                 <!-- Recent Activity Feed -->
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="activity-feed card">
-                            <h5 class="card-header">Recent Activity Feed</h5>
+                        <div class="card">
                             <div class="card-body">
-                                <div class="activity-item">
-                                    <div>New appointment booked on Oct 3rd, 10:30 AM</div>
-                                    <div class="text-muted">2 hours ago</div>
-                                    <button class="btn btn-success">Confirm</button>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="card-title">Recent Activity Feed</h5>
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Last 7 Days
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Last 7 Days</a>
+                                            <a class="dropdown-item" href="#">Last 15 Days</a>
+                                            <a class="dropdown-item" href="#">Last 30 Days</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="activity-item">
-                                    <div>1 Review upvoted by 5 users</div>
-                                    <div class="text-muted">Yesterday</div>
-                                    <button class="btn btn-info">View</button>
-                                </div>
-                                <div class="activity-item">
-                                    <div>New service added: Grooming Package</div>
-                                    <div class="text-muted">Sept 30th</div>
-                                    <button class="btn btn-primary">Edit</button>
-                                </div>
-                                <div class="activity-item">
-                                    <div>Jane Smith left a review: "The service was fantastic!"</div>
-                                    <div class="text-muted">Sept 29th</div>
-                                    <button class="btn btn-secondary">Reply</button>
-                                </div>
+                                <table class="table">
+                                    <thead >
+                                        <tr>
+                                            <th scope="col">Events</th>
+                                            <th scope="col">Date/Time</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/Pic.png" class="rounded-circle mr-3" alt="User">
+                                                    <div>
+                                                        <strong>New appointment booked on Oct 3rd, 10:30 AM</strong>
+                                                        <p class="mb-0 text-muted">Appointment awaiting your confirmation</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted">2 hours ago</td>
+                                            <td><button class="btn btn-success btn-sm">Confirm</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/Pic (2).png" class="rounded-circle mr-3" alt="User">
+                                                    <div>
+                                                        <strong>1 Review upvoted by 5 users</strong>
+                                                        <p class="mb-0 text-muted">Popular review gaining attention</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted">Yesterday</td>
+                                            <td><button class="btn btn-info btn-sm">View</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/Pic (3).png" class="rounded-circle mr-3" alt="User">
+                                                    <div>
+                                                        <strong>New service added: Grooming Package</strong>
+                                                        <p class="mb-0 text-muted">Available for dogs only</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted">Sept 30th</td>
+                                            <td><button class="btn btn-info btn-sm">Edit</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/Pic (4).png" class="rounded-circle mr-3" alt="User">
+                                                    <div>
+                                                        <strong>Jane Smith left a review: "The service was fantastic!"</strong>
+                                                        <p class="mb-0 text-muted">Left 5 star ratings</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted">Sept 29th</td>
+                                            <td><button class="btn btn-success btn-sm">Reply</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                        
                     </div>
 
                     <!-- Recent Reviews -->
