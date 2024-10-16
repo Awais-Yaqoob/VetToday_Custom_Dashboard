@@ -85,6 +85,7 @@ body {
 .card {
     margin: 15px 0;
     min-height:200px;
+    max-height: 200px;
     border: 1px solid rgb(0 0 0 / .05);
     border-radius: 15px;
     box-shadow: 0px 0px 2px rgba(196, 202, 218, 0.651);
@@ -104,6 +105,8 @@ body {
     font-size: 28px;
     font-weight: 600;
     margin: 0;
+    color: #252F4A;
+
 }
 .card-tag p {
     font-size: 11px;
@@ -117,14 +120,20 @@ body {
     align-content: center;
 }
 .card-tag {
-    background-color:#F0FDF4 ;
-    color: #16A34A;
     padding: 0px 10px;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     column-gap: 3px;
     align-self: center;
+}
+.green-tag {
+    background-color:#F0FDF4 ;
+    color: #16A34A;
+}
+.red-tag{
+    background-color: #FEF2F2;
+    color: #DC2626;
 }
 .card-text{
     font-size: 14px;
@@ -144,13 +153,18 @@ body {
     margin-left: -15px;
 }
 .no-visitors{
-    
     background-color: #F9F9F9;
     border-radius: 50%;
     color: #C4CADA;
     padding: 7px;
     font-size: 12px;
     margin-left: -15px;
+}
+.chart-container{
+    border-top: 2px dotted #B6B6B6;
+    height: fit-content;
+    overflow: hidden;
+    margin-top: 3rem;
 }
 .btn-primary {
     background-color: #17a2b8;

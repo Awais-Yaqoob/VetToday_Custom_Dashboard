@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vet Today Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -68,7 +69,7 @@
                                 <div>
                                 <div class="d-flex d-row card-value">
                                 <h4 class="card-title">1,690</h5>
-                                    <div class="card-tag">
+                                    <div class="card-tag green-tag">
                                         <span class="fas fa-arrow-up"></span>
                                         <p>2.2%</p>
                                     </div>
@@ -89,13 +90,26 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center">
+                        <div class="card text-left">
                             <div class="card-body">
-                                <h5 class="card-title">250</h5>
-                                <p class="card-text">Total Leads This Month</p>
+                                <div>
+                                <div class="d-flex d-row card-value">
+                                <h4 class="card-title">250</h5>
+                                    <div class="card-tag red-tag">
+                                        <span class="fas fa-arrow-down"></span>
+                                        <p>2.2%</p>
+                                    </div>
+                            </div>
+                                <p class="card-text">Total Leads this Month</p>
+                           
+                            </div>
+
+                            <div class="chart-container">
+                                <canvas id="leadsChart"></canvas>
                             </div>
                         </div>
                     </div>
+                </div>
                     <div class="col-md-4">
                         <div class="card text-center">
                             <div class="card-body">
@@ -169,6 +183,79 @@
             </main>
         </div>
     </div>
+
+
+    <script>
+        // Define your chart data and configuration
+        const ctx = document.getElementById('leadsChart').getContext('2d');
+        const leadsChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Oct 1', 'Oct 2', 'Oct 3', 'Oct 4', 'Oct 5', 'Oct 6', 'Oct 7'], // Dates on the x-axis
+                datasets: [{
+                    data: [30, 10, 30, 2, 43, 35, 50], // Lead data with less deviation
+                    borderColor: '#093889',
+                    borderWidth: 2,
+                    fill: false,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#093889',
+                    pointHoverBorderWidth: 2,
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        display: false, // Hide the x-axis
+                    },
+                    y: {
+                        display: false, // Hide the y-axis
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Disable the legend
+                    },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return 'Leads: ' + tooltipItem.raw;
+                            },
+                            // Customize the tooltip background color based on the lead value
+                            labelColor: function(tooltipItem) {
+                                // Set threshold for more leads or less leads
+                                const value = tooltipItem.raw;
+                                if (value >= 30) { // More leads (green if >= 110)
+                                    return {
+                        
+                                        borderColor: '#00cc00',
+                                        backgroundColor: '#00cc00',
+                                    };
+                                } else { // Less leads (red if < 110)
+                                    return {
+                                        borderColor: '#cc0000',
+                                        backgroundColor: '#cc0000',
+                                    };
+                                }
+                            }
+                        }
+                    }
+                },
+                layout: {
+                    padding:0 // Remove padding around the chart
+                },
+                elements: {
+                    line: {
+                        tension: 0.3 // Reducing deviation by making the line straighter
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false // Allow custom height
+            }
+        });
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
