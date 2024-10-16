@@ -1,0 +1,165 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: white;
+}
+
+.sidebar {
+    background-color: #002831;
+    height: 100vh;
+    padding-top: 30px;
+    color: white;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    background-color: white;
+    color: #002831;
+}
+
+.sidebar a.active {
+    background-color: white;
+    color: #002831;
+    font-weight: 600;
+}
+ 
+.sidebar a.active i{
+    color: #17C653;
+}
+.sidebar a:hover i{
+    color: #17C653;
+}
+
+.sidebar i {
+    font-size: 18px;
+    margin-right: 15px;
+    align-items: end;
+}
+
+.dashboard-header {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav a.active{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.header-nav a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #999;
+}
+
+.bell-icon {
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 33px;
+    width: 33px;
+    padding: 6px;
+    border: 1px solid #99A1B75E;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 2px;
+    border: 2px solid #99A1B75E;
+}
+
+.card {
+    margin: 15px 0;
+}
+.card-value{
+    column-gap:10px;
+    align-items:center;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+.card-tag p {
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+    align-content: center;
+}
+.card-tag .fas{
+    font-size: 11px;
+    font-weight: 600;
+    align-content: center;
+}
+.card-tag {
+    background-color:#F0FDF4 ;
+    color: #16A34A;
+    padding: 0px 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    align-self: center;
+}
+.card-text{
+    font-size: 14px;
+    color:#999;
+}
+.btn-primary {
+    background-color: #17a2b8;
+    border: none;
+}
+
+.activity-feed {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.reviews-section {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-item img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.star-rating {
+    color: #ffc107;
+}

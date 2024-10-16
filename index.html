@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Today Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="./Style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="dashboard-header d-flex align-items-center">
+        <div class="header-logo">
+            <img src="assets/image 1.png" alt="Logo">
+        </div>
+        <div class="header-nav">
+            <a href="#" class="mr-3 active">Dashboard</a>
+            <a href="#" class="mr-3">Appointments</a>
+            <a href="#" class="mr-3">Reviews</a>
+            <a href="#" class="mr-3">Messages</a>
+        </div>
+        <div >
+            <img src="assets/Vector.png" class="bell-icon" alt="bell-icon">
+            <img src="assets/Ellipse 7.png" class="user-image" alt="User Profile">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 sidebar">
+                <div class="sidebar-sticky">
+                    <a class="nav-link active" href="#">
+                        <i class="fas fa-chart-line"></i> Overview
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-home"></i> Manage Listings
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user"></i> Leads
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i> Analytics
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-tags"></i> Special Offers
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i> Newsletter
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-wrench"></i> Support
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-10 ml-sm-auto px-4">
+                <!-- Overview Cards -->
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                <div class="d-flex d-row card-value">
+                                <h4 class="card-title">1,690</h5>
+                                    <div class="card-tag">
+                                        <span class="fas fa-arrow-up"></span>
+                                        <p>2.2%</p>
+                                    </div>
+                            </div>
+                                <p class="card-text">Profile Views this Month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">250</h5>
+                                <p class="card-text">Total Leads This Month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">3 Active Offers</h5>
+                                <button class="btn btn-primary">Create a New Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity Feed -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="activity-feed card">
+                            <h5 class="card-header">Recent Activity Feed</h5>
+                            <div class="card-body">
+                                <div class="activity-item">
+                                    <div>New appointment booked on Oct 3rd, 10:30 AM</div>
+                                    <div class="text-muted">2 hours ago</div>
+                                    <button class="btn btn-success">Confirm</button>
+                                </div>
+                                <div class="activity-item">
+                                    <div>1 Review upvoted by 5 users</div>
+                                    <div class="text-muted">Yesterday</div>
+                                    <button class="btn btn-info">View</button>
+                                </div>
+                                <div class="activity-item">
+                                    <div>New service added: Grooming Package</div>
+                                    <div class="text-muted">Sept 30th</div>
+                                    <button class="btn btn-primary">Edit</button>
+                                </div>
+                                <div class="activity-item">
+                                    <div>Jane Smith left a review: "The service was fantastic!"</div>
+                                    <div class="text-muted">Sept 29th</div>
+                                    <button class="btn btn-secondary">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Reviews -->
+                    <div class="col-md-4">
+                        <div class="reviews-section card">
+                            <h5 class="card-header text-center">Recent Reviews</h5>
+                            <div class="card-body">
+                                <div class="review-item d-flex align-items-center mb-3">
+                                    <img src="profile1.jpg" alt="Reviewer">
+                                    <div>
+                                        <p class="mb-0">The service was fantastic! <span class="star-rating">★★★★☆</span></p>
+                                        <small>Samuel Xade</small>
+                                    </div>
+                                </div>
+                                <div class="review-item d-flex align-items-center mb-3">
+                                    <img src="profile2.jpg" alt="Reviewer">
+                                    <div>
+                                        <p class="mb-0">Highly Recommended!!!! <span class="star-rating">★★★★★</span></p>
+                                        <small>Jane Smith</small>
+                                    </div>
+                                </div>
+                                <div class="review-item d-flex align-items-center">
+                                    <img src="profile3.jpg" alt="Reviewer">
+                                    <div>
+                                        <p class="mb-0">Clinic is well-maintained! <span class="star-rating">★★★★☆</span></p>
+                                        <small>Emma Belle</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
