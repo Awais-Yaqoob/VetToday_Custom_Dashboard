@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="./Style.css" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -24,7 +26,7 @@
             <a href="#" class="mr-3">Reviews</a>
             <a href="#" class="mr-3">Messages</a>
         </div>
-        <div >
+        <div>
             <img src="assets/Vector.png" class="bell-icon" alt="bell-icon">
             <img src="assets/Ellipse 7.png" class="user-image" alt="User Profile">
         </div>
@@ -67,15 +69,15 @@
                         <div class="card text-left">
                             <div class="card-body">
                                 <div>
-                                <div class="d-flex d-row card-value">
-                                <h4 class="card-title">1,690</h5>
-                                    <div class="card-tag green-tag">
-                                        <span class="fas fa-arrow-up"></span>
-                                        <p>2.2%</p>
+                                    <div class="d-flex d-row card-value">
+                                        <h4 class="card-title">1,690</h5>
+                                            <div class="card-tag green-tag">
+                                                <span class="fas fa-arrow-up"></span>
+                                                <p>2.2%</p>
+                                            </div>
                                     </div>
-                            </div>
-                                <p class="card-text">Profile Views this Month</p>
-                            </div>
+                                    <p class="card-text">Profile Views this Month</p>
+                                </div>
                                 <div class="d-flex flex-column">
                                     <p class="mb-1 visitor-text">Top visitors</p>
                                     <div>
@@ -93,31 +95,31 @@
                         <div class="card text-left">
                             <div class="card-body">
                                 <div>
-                                <div class="d-flex d-row card-value">
-                                <h4 class="card-title">250</h5>
-                                    <div class="card-tag red-tag">
-                                        <span class="fas fa-arrow-down"></span>
-                                        <p>2.2%</p>
+                                    <div class="d-flex d-row card-value">
+                                        <h4 class="card-title">250</h5>
+                                            <div class="card-tag red-tag">
+                                                <span class="fas fa-arrow-down"></span>
+                                                <p>2.2%</p>
+                                            </div>
                                     </div>
-                            </div>
-                                <p class="card-text">Total Leads this Month</p>
-                           
-                            </div>
+                                    <p class="card-text">Total Leads this Month</p>
 
-                            <div class="chart-container">
-                                <canvas id="leadsChart"></canvas>
+                                </div>
+
+                                <div class="chart-container">
+                                    <canvas id="leadsChart"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div class="col-md-4">
                         <div class="card text-left">
                             <div class="card-body">
                                 <div>
-                                <h5 class="card-title">3 Active Offers</h5>
-                                <p class="card-text">Total Leads this Month</p>
-                            </div>
-                            <button class="create-offer-btn" >Create a New Offer</button>
+                                    <h5 class="card-title">3 Active Offers</h5>
+                                    <p class="card-text">Total Leads this Month</p>
+                                </div>
+                                <button class="create-offer-btn">Create a New Offer</button>
                             </div>
                         </div>
                     </div>
@@ -126,12 +128,14 @@
                 <!-- Recent Activity Feed -->
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="card">
+                        <div class="card activity">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h5 class="card-title">Recent Activity Feed</h5>
                                     <div class="dropdown">
-                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
                                             Last 7 Days
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -142,7 +146,7 @@
                                     </div>
                                 </div>
                                 <table class="table">
-                                    <thead >
+                                    <thead>
                                         <tr>
                                             <th scope="col">Events</th>
                                             <th scope="col">Date/Time</th>
@@ -156,88 +160,125 @@
                                                     <img src="assets/Pic.png" class="rounded-circle mr-3" alt="User">
                                                     <div>
                                                         <strong>New appointment booked on Oct 3rd, 10:30 AM</strong>
-                                                        <p class="mb-0 text-muted">Appointment awaiting your confirmation</p>
+                                                        <p class="mb-0 card-text">Appointment awaiting your confirmation
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-muted">2 hours ago</td>
+                                            <td class="card-text">2 hours ago</td>
                                             <td><button class="btn btn-success btn-sm">Confirm</button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <img src="assets/Pic (2).png" class="rounded-circle mr-3" alt="User">
+                                                    <img src="assets/Pic (2).png" class="rounded-circle mr-3"
+                                                        alt="User">
                                                     <div>
                                                         <strong>1 Review upvoted by 5 users</strong>
-                                                        <p class="mb-0 text-muted">Popular review gaining attention</p>
+                                                        <p class="mb-0 card-text">Popular review gaining attention</p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-muted">Yesterday</td>
+                                            <td class="card-text">Yesterday</td>
                                             <td><button class="btn btn-info btn-sm">View</button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <img src="assets/Pic (3).png" class="rounded-circle mr-3" alt="User">
+                                                    <img src="assets/Pic (3).png" class="rounded-circle mr-3"
+                                                        alt="User">
                                                     <div>
                                                         <strong>New service added: Grooming Package</strong>
-                                                        <p class="mb-0 text-muted">Available for dogs only</p>
+                                                        <p class="mb-0 card-text">Available for dogs only</p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-muted">Sept 30th</td>
+                                            <td class="card-text">Sept 30th</td>
                                             <td><button class="btn btn-info btn-sm">Edit</button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <img src="assets/Pic (4).png" class="rounded-circle mr-3" alt="User">
+                                                    <img src="assets/Pic (4).png" class="rounded-circle mr-3"
+                                                        alt="User">
                                                     <div>
-                                                        <strong>Jane Smith left a review: "The service was fantastic!"</strong>
-                                                        <p class="mb-0 text-muted">Left 5 star ratings</p>
+                                                        <strong>Jane Smith left a review: "The service was
+                                                            fantastic!"</strong>
+                                                        <p class="mb-0 card-text">Left 5 star ratings</p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="text-muted">Sept 29th</td>
+                                            <td class="card-text">Sept 29th</td>
                                             <td><button class="btn btn-success btn-sm">Reply</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <!-- Recent Reviews -->
                     <div class="col-md-4">
-                        <div class="reviews-section card">
-                            <h5 class="card-header text-center">Recent Reviews</h5>
-                            <div class="card-body">
-                                <div class="review-item d-flex align-items-center mb-3">
-                                    <img src="profile1.jpg" alt="Reviewer">
+                        <div class="card reviews-section">
+                            <div class="card-body text-center">
+                                <div class="mb-3 card-header">
+                                    <span class="star-rating-top">
+                                        ★★★★☆
+                                    </span>
+                                    <h4 class="mt-2">4.5/5</h4>
+                                    <p class="card-text">Total 650 customer reviews</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="mb-0"><b>Recent Reviews</b></h6>
+                                    <a href="#" class="text-success font-weight-bold">View All</a>
+                                </div>
+
+                                <div class="review-item d-flex justify-content-between mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/Pic1.png" class="rounded-circle mr-3" alt="Reviewer"
+                                            width="50">
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0 font-weight-bold">The service was fantastic! </p>
+                                                <small class="card-text ">Samuel Xade</small>
+                                            </div>
+                                    </div>
                                     <div>
-                                        <p class="mb-0">The service was fantastic! <span class="star-rating">★★★★☆</span></p>
-                                        <small>Samuel Xade</small>
+                                        <span class="star-rating">★★★★★</span>
                                     </div>
                                 </div>
-                                <div class="review-item d-flex align-items-center mb-3">
-                                    <img src="profile2.jpg" alt="Reviewer">
+
+                                <div class="review-item d-flex justify-content-between mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/Pic (1).png" class="rounded-circle mr-3" alt="Reviewer"
+                                            width="50">
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0 font-weight-bold">Highly Recommended!!!! </p>
+                                                <small class="card-text ">Jane Smith</small>
+                                            </div>
+                                    </div>
                                     <div>
-                                        <p class="mb-0">Highly Recommended!!!! <span class="star-rating">★★★★★</span></p>
-                                        <small>Jane Smith</small>
+                                        <span class="star-rating">★★★★★</span>
                                     </div>
                                 </div>
-                                <div class="review-item d-flex align-items-center">
-                                    <img src="profile3.jpg" alt="Reviewer">
+
+                                <div class="review-item d-flex justify-content-between mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/300-12.jpg (1).png" class="rounded-circle mr-3" alt="Reviewer"
+                                            width="50">
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0 font-weight-bold">Clinic is well-maintained! </p>
+                                                <small class="card-text ">Emma Belle</small>
+                                            </div>
+                                    </div>
                                     <div>
-                                        <p class="mb-0">Clinic is well-maintained! <span class="star-rating">★★★★☆</span></p>
-                                        <small>Emma Belle</small>
+                                        <span class="star-rating">★★★★☆</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </main>
         </div>
@@ -279,16 +320,16 @@
                     tooltip: {
                         enabled: true,
                         callbacks: {
-                            label: function(tooltipItem) {
+                            label: function (tooltipItem) {
                                 return 'Leads: ' + tooltipItem.raw;
                             },
                             // Customize the tooltip background color based on the lead value
-                            labelColor: function(tooltipItem) {
+                            labelColor: function (tooltipItem) {
                                 // Set threshold for more leads or less leads
                                 const value = tooltipItem.raw;
                                 if (value >= 30) { // More leads (green if >= 110)
                                     return {
-                        
+
                                         borderColor: '#00cc00',
                                         backgroundColor: '#00cc00',
                                     };
@@ -303,7 +344,7 @@
                     }
                 },
                 layout: {
-                    padding:0 // Remove padding around the chart
+                    padding: 0 // Remove padding around the chart
                 },
                 elements: {
                     line: {
@@ -321,4 +362,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

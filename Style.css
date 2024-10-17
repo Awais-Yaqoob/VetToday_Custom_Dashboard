@@ -181,6 +181,10 @@ body {
     color: #17C653;
 } 
 
+.activity{
+    min-height: 440px;
+}
+
 .table {
     margin-bottom: 0;
 }
@@ -274,24 +278,53 @@ img.rounded-circle {
     font-size: 14px;
 }
 
+.card-header{
+    background-color: #EFF6FFE3;
+    border: none;
+    padding: 20px 0;
+}
+.card-header h4{
+    font-weight: 600;
+}
+.card-header:first-child{
+    border-radius: 15px;
+}
 .reviews-section {
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 8px;
+   min-height: 440px;
+}
+
+.star-rating-top {
+    font-size: 35px;
+    color: #ffc107; /* Gold color for the stars */
+}
+
+.text-muted {
+    color: #6B7280 !important;
+}
+
+.font-weight-bold {
+    font-weight: 600;
 }
 
 .review-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    border: 1px solid #E2E8F0;
+    padding: 3px 10px;
+    border-radius: 8px;
 }
-
+.review-item p{
+    font-size: 14px;
+    text-align: left;
+}
+.review-item small{
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+}
 .review-item img {
-    border-radius: 50%;
-    width: 40px;
-    margin-right: 10px;
+    width: 35px;
+    height: 35px;
 }
-
 .star-rating {
-    color: #ffc107;
+    font-size: 15px;
+    color: #ffc107; /* Gold color for the stars */
 }
