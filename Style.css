@@ -135,7 +135,7 @@ body {
 }
 .card-text{
     font-size: 14px;
-    color:#999;
+    color:#78829D;
 }
 .visitor-text{
     font-size: 14px;
@@ -327,4 +327,99 @@ img.rounded-circle {
 .star-rating {
     font-size: 15px;
     color: #ffc107; /* Gold color for the stars */
+}
+
+
+
+
+
+/* Manage Listing Page */
+
+
+
+.listing-table {
+    background-color: white;
+}
+
+.listing-table th, .listing-table td {
+    vertical-align: middle;
+}
+
+.listing-table thead th {
+   border-bottom: 2px dotted #E5E7EB;
+    font-weight: 600;
+    color: #78829D;
+    background-color: white;
+}
+.listing-table tbody td img{
+    width: 35px;
+    height: 35px;
+}
+
+.listing-star-rating {
+    color: #ffc107;
+}
+
+.listing-actions-btn {
+    background-color: #F9FAFB;
+    border-color: #E5E7EB;
+    color: #212529;
+}
+
+.listing-create-btn:hover {
+    background-color: #22C55E;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.listing-create-btn{
+    background-color: #22C55E;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.listing-pagination {
+    justify-content: center;
+}
+
+.listing-pagination .page-item {
+    border-radius: 20px;
+    border-color: #E5E7EB;
+}
+.page-item.active .page-link {
+    background-color: #17C653;
+    border-color: #17C653;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+.page-link .fa{
+    color: #CCCCCC;
+}
+.form-control{
+    border-radius: 20px;
+    font-size: 14px;
+    color: #747782;
+    padding: 5px 20px;
+    height: calc(2em + .5rem + 5px);
+    border: 1px solid #E5E4E4;
+}
+.search-input{
+    background-color: #F9F9F9;
+    color: #99A1B7;
+    text-align: left;
+}
+select{
+    -webkit-appearance: none;
+ }
+ select + i.fa {
+    float: right;
+    margin-top: -25px;
+    margin-right: 15px;
+    background-color: transparent;
+    color:#747782;
+    font-size: 12px;
+}
+.custom-arrow{
+    width: 200px;
 }
