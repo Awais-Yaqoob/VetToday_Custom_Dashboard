@@ -381,6 +381,7 @@ img.rounded-circle {
 
 .listing-pagination {
     justify-content: center;
+    font-size: 10px;
 }
 
 .listing-pagination .page-item {
@@ -395,6 +396,9 @@ img.rounded-circle {
 }
 .page-link .fa{
     color: #CCCCCC;
+}
+.page-link:hover .fa{
+    color: white;
 }
 .form-control{
     border-radius: 20px;
@@ -422,4 +426,49 @@ select{
 }
 .custom-arrow{
     width: 200px;
+}
+
+
+
+
+/* Leads page */
+
+
+.search-input + i.fa {
+    float: right;
+    margin-top: -25px;
+    margin-right: 15px;
+    background-color: transparent;
+    color:#747782;
+    font-size: 13px;
+}
+
+.lead-export-btn{
+    background-color: #EDFBF2;
+    color: #0DB446;
+    border-radius: 9px;
+    font-size: 15px;
+}
+.lead-export-btn:hover {
+    background-color: #EDFBF2;
+    color: #0DB446;
+    border-radius: 9px;
+    font-size: 15px;
+}
+.lead-details-btn{
+    border: none;
+    color: #252F4A;
+    background-color: #F6F6F7;
+    font-weight: 600;
+}
+.page-link{
+    color: #333333;
+    margin: 0 4px;   
+    border-radius: 6px;
+}
+.page-link:hover{
+    background-color: #17C653;
+    border-color: #17C653;
+    color: white;
+   
 }

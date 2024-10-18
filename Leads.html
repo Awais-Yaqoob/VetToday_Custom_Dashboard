@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leads</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="./Style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="dashboard-header d-flex align-items-center">
+        <div class="header-logo">
+            <img src="assets/image 1.png" alt="Logo">
+        </div>
+        <div class="header-nav">
+            <a href="#" class="mr-3 active">Dashboard</a>
+            <a href="#" class="mr-3">Appointments</a>
+            <a href="#" class="mr-3">Reviews</a>
+            <a href="#" class="mr-3">Messages</a>
+        </div>
+        <div>
+            <img src="assets/Vector.png" class="bell-icon" alt="bell-icon">
+            <img src="assets/Ellipse 7.png" class="user-image" alt="User Profile">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 sidebar">
+                <div class="sidebar-sticky">
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i> Overview
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-home"></i> Manage Listings
+                    </a>
+                    <a class="nav-link active" href="#">
+                        <i class="fas fa-user"></i> Leads
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i> Analytics
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-tags"></i> Special Offers
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i> Newsletter
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-wrench"></i> Support
+                    </a>
+                </div>
+            </nav>
+
+
+            <!-- Main content -->
+            <main role="main" class="col-md-10 ml-sm-auto px-5">
+
+                <div class="d-flex justify-content-between align-items-center mt-5 ">
+                    <h5><b>20 Leads</b></h5>
+                    <button class="btn lead-export-btn"><i class="fa fa-upload"></i> Export All</button>
+                </div>
+                <div class="card py-4 px-4">
+
+
+                    <!-- Filters -->
+                    <div class="d-flex mt-3 ">
+                        <div class="form-group ">
+                            <input type="text" class="form-control search-input" placeholder="Search Listings"><i
+                                class="fa fa-search"></i>
+                        </div>
+                        <div class="form-group custom-arrow ml-3">
+                            <select class="form-control">
+                                <option selected>Business Name</option>
+                                <option>PetVet</option>
+                                <option>VioVet</option>
+                                <option>PetCare</option>
+                            </select><i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="form-group custom-arrow ml-3">
+                            <select class="form-control">
+                                <option selected>All Time</option>
+                                <option>Today</option>
+                                <option>Last 7 Days</option>
+                                <option>Last 30 Days</option>
+                            </select>
+                            </select><i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- Listings Table -->
+                    <table class="table listing-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox">
+                                </th>
+                                <th scope="col">ID</th>
+                                <th scope="col">CLIENT NAME</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">INSURANCE</th>
+                                <th scope="col">DATE</th>
+                                <th scope="col">PHONE NUMBER</th>
+                                <th scope="col">DETAILS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class="card-text">12340</td>
+                                <td class="card-text">Emma Smith</td>
+                                <td class="card-text">emma@gmail.com</td>
+                                <td class="card-text">Healthy Paws</td>
+                                <td class="card-text">21 Oct 2024</td>
+                                <td class="card-text">+111 222 333</td>
+                                <td>
+                                    <button class="btn btn-sm lead-details-btn" type="button">View Details</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class="card-text">12340</td>
+                                <td class="card-text">Emma Smith</td>
+                                <td class="card-text">emma@gmail.com</td>
+                                <td class="card-text">Healthy Paws</td>
+                                <td class="card-text">21 Oct 2024</td>
+                                <td class="card-text">+111 222 333</td>
+                                <td>
+                                    <button class="btn btn-sm lead-details-btn" type="button">View Details</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class="card-text">12340</td>
+                                <td class="card-text">Emma Smith</td>
+                                <td class="card-text">emma@gmail.com</td>
+                                <td class="card-text">Healthy Paws</td>
+                                <td class="card-text">21 Oct 2024</td>
+                                <td class="card-text">+111 222 333</td>
+                                <td>
+                                    <button class="btn btn-sm lead-details-btn" type="button">View Details</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class="card-text">12340</td>
+                                <td class="card-text">Emma Smith</td>
+                                <td class="card-text">emma@gmail.com</td>
+                                <td class="card-text">Healthy Paws</td>
+                                <td class="card-text">21 Oct 2024</td>
+                                <td class="card-text">+111 222 333</td>
+                                <td>
+                                    <button class="btn btn-sm lead-details-btn " type="button">View Details</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class="card-text">12340</td>
+                                <td class="card-text">Emma Smith</td>
+                                <td class="card-text">emma@gmail.com</td>
+                                <td class="card-text">Healthy Paws</td>
+                                <td class="card-text">21 Oct 2024</td>
+                                <td class="card-text">+111 222 333</td>
+                                <td>
+                                    <button class="btn btn-sm lead-details-btn" type="button">View Details</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td class="card-text">12340</td>
+                                <td class="card-text">Emma Smith</td>
+                                <td class="card-text">emma@gmail.com</td>
+                                <td class="card-text">Healthy Paws</td>
+                                <td class="card-text">21 Oct 2024</td>
+                                <td class="card-text">+111 222 333</td>
+                                <td>
+                                    <button class="btn btn-sm lead-details-btn " type="button">View Details</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Pagination -->
+                    <div class="d-flex justify-content-between mt-5">
+                        <p>Showing 1 to 1 of 5 entries</p>
+                        <nav>
+                            <ul class="pagination listing-pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1"><span
+                                            class="fa fa-chevron-left"></span></a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item"></li>
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <i class="ml-2 mr-2" ><strong>...</strong></i>
+                                <li class="page-item"></li>
+                                    <a class="page-link" href="#">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"><span class="fa fa-chevron-right"></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
