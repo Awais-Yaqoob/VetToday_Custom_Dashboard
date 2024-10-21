@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analytics</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -170,21 +171,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- Recent Activity Feed -->
+                <!-- Bar chart -->
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="card activity">
+                    <div class="col-md-6">
+                        <div class="card analytics-chart-graph">
                             <div class="card-body">
-                              
+                                
+                                    <h5><b>Listing Views</b></h5>
+                                    <div class="analytics-chart-container">
+                                    <canvas id="listingViewsChart"></canvas>
+                                </div>
                                
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- Recent Reviews -->
-                    <div class="col-md-4">
-                        <div class="card reviews-section">
+                    <!-- Line graph -->
+                    <div class="col-md-6">
+                        <div class="card ">
                             <div class="card-body text-center">
                                 
                               
@@ -198,6 +203,86 @@
             </main>
         </div>
     </div>
+
+    <script>
+        const ctx = document.getElementById('listingViewsChart').getContext('2d');
+        const listingViewsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Views',
+                    data: [54, 42, 75, 110, 23, 87, 50],
+                    backgroundColor: '#1B84FF',
+                    borderRadius: 5, // Make the bar edges rounded
+                    barPercentage: 0.4, // Adjust bar width
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                    grid: {
+                        display: false // Hide vertical grid lines
+                    },
+                    border: {
+                        display: false, // Remove the x-axis line itself
+                    },
+                },
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                        color: 'rgba(0, 0, 0, 0.1)', // Horizontal line color
+                        borderDash: [5, 5], // Dotted horizontal lines
+                    },
+                    border: {
+                        display: false, // Remove the x-axis line itself
+                    },
+                        
+                        ticks: {
+                            stepSize: 20, // Adjust step size
+                            min: 20,
+                            max: 120
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return 'Views: ' + tooltipItem.raw;
+                            },
+                            labelColor: function(tooltipItem) {
+                                const value = tooltipItem.raw;
+                                if (value < 30) {
+                                    // Less than 30, red tooltip
+                                    return {
+                                        borderColor: '#FF0000',
+                                        backgroundColor: '#FF0000',
+                                    };
+                                } else {
+                                    // 30 and above, green tooltip
+                                    return {
+                                        borderColor: '#00FF00',
+                                        backgroundColor: '#00FF00',
+                                    };
+                                }
+                            }
+                        }
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+    
+    
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
