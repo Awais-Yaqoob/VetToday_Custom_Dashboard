@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="./Style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="dashboard-header d-flex align-items-center">
+        <div class="header-logo">
+            <img src="assets/image 1.png" alt="Logo">
+        </div>
+        <div class="header-nav">
+            <a href="#" class="mr-3 active">Dashboard</a>
+            <a href="#" class="mr-3">Appointments</a>
+            <a href="#" class="mr-3">Reviews</a>
+            <a href="#" class="mr-3">Messages</a>
+        </div>
+        <div>
+            <img src="assets/Vector.png" class="bell-icon" alt="bell-icon">
+            <img src="assets/Ellipse 7.png" class="user-image" alt="User Profile">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 sidebar">
+                <div class="sidebar-sticky">
+                    <a  href="#">
+                        <i class="fas fa-chart-line"></i> Overview
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-home"></i> Manage Listings
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user"></i> Leads
+                    </a>
+                    <a class="nav-link active" href="#">
+                        <i class="fas fa-chart-bar"></i> Analytics
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-tags"></i> Special Offers
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-envelope"></i> Newsletter
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-wrench"></i> Support
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-10 ml-sm-auto px-5">
+
+                 <!-- Filters -->
+                 <div class="d-flex mt-4 ">
+                   
+                    <div class="form-group custom-arrow">
+                        <select class="form-control">
+                            <option selected>Business Name</option>
+                            <option>PetVet</option>
+                            <option>VioVet</option>
+                            <option>PetCare</option>
+                        </select><i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="form-group custom-arrow ml-3">
+                        <select class="form-control">
+                            <option selected>This Year</option>
+                            <option >All Time</option>
+                            <option>Today</option>
+                            <option>Last 7 Days</option>
+                            <option>Last 30 Days</option>
+                        </select>
+                        </select><i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <!-- Overview Cards -->
+                <div class="row ">
+                    <div class="col-md-3">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                
+                                    <img src="assets/Icon.png" class="icon-analytics" alt="icon">
+                                    <div class="card-value">
+                                        <h4 class="card-title">327</h5>
+                                        <p class="card-text">Total Users</p>   
+                                    </div>
+                                    
+                                    <div class="card-tag-analytics green-tag">
+                                        <span class="fas fa-arrow-up"></span>
+                                        <p>2.2%</p>
+                                    </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-3">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                
+                                    <img src="assets/Icon (1).png" class="icon-analytics" alt="icon">
+                                    <div class="card-value">
+                                        <h4 class="card-title">2000</h5>
+                                        <p class="card-text">Listing Viws</p>   
+                                    </div>
+                                    
+                                    <div class="card-tag-analytics green-tag">
+                                        <span class="fas fa-arrow-up"></span>
+                                        <p>2.2%</p>
+                                    </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-3">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                
+                                    <img src="assets/Icon (2).png" class="icon-analytics" alt="icon">
+                                    <div class="card-value">
+                                        <h4 class="card-title">80</h5>
+                                        <p class="card-text">Total Reviews</p>   
+                                    </div>
+                                    
+                                    <div class="card-tag-analytics green-tag">
+                                        <span class="fas fa-arrow-up"></span>
+                                        <p>2.2%</p>
+                                    </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-left">
+                            <div class="card-body">
+                                
+                                    <img src="assets/Icon (3).png" class="icon-analytics" alt="icon">
+                                    <div class="card-value">
+                                        <h4 class="card-title">305</h5>
+                                        <p class="card-text">Total Leads</p>   
+                                    </div>
+                                    
+                                    <div class="card-tag-analytics red-tag">
+                                        <span class="fas fa-arrow-down"></span>
+                                        <p>2.2%</p>
+                                    </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent Activity Feed -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card activity">
+                            <div class="card-body">
+                              
+                               
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Recent Reviews -->
+                    <div class="col-md-4">
+                        <div class="card reviews-section">
+                            <div class="card-body text-center">
+                                
+                              
+
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
