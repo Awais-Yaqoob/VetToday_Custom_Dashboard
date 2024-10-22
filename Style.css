@@ -533,3 +533,11 @@ select{
 .legend-new {
     background-color: #007BFF;
 }
+.green-tag:hover {
+    background-color:#F0FDF4 ;
+    color: #16A34A;
+}
+.red-tag:hover{
+    background-color: #FEF2F2;
+    color: #DC2626;
+}
