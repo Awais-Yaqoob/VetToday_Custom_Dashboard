@@ -541,3 +541,34 @@ select{
     background-color: #FEF2F2;
     color: #DC2626;
 }
+.actions-btn:hover{
+    background-color: #E6F0FD;
+    color: #1D81F9;
+}
+.actions-btn:target{
+    background-color: #E6F0FD;
+    color: #1D81F9;
+}
+.actions-btn-menu {
+   
+}
+.dropdown-item{
+    font-size: 13px;
+}
+.dropdown-item:hover{
+    background-color: #E6F0FD;
+    color: #1D81F9;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+   
+}
+.btn:focus{
+    box-shadow:none;
+}
+
