@@ -509,3 +509,27 @@ select{
 .analytics-chart-graph{
     min-height: 430px;
 }
+.legend-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+.legend-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.legend-text {
+    display: flex;
+    align-items:center;
+    font-size: 12px;
+    color: #78829D;
+}
+.legend-returning {
+    background-color: #00B74A;
+}
+.legend-new {
+    background-color: #007BFF;
+}

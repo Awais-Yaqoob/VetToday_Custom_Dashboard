@@ -178,7 +178,7 @@
                             <div class="card-body">
                                 
                                     <h5><b>Listing Views</b></h5>
-                                    <div class="analytics-chart-container">
+                                    <div class="analytics-chart-container pr-3">
                                     <canvas id="listingViewsChart"></canvas>
                                 </div>
                                
@@ -189,12 +189,24 @@
 
                     <!-- Line graph -->
                     <div class="col-md-6">
-                        <div class="card ">
-                            <div class="card-body text-center">
-                                
-                              
-
-                            
+                        <div class="card analytics-chart-graph">
+                            <div class="card-body">
+                                    <h5><b>Leads Statistic</b></h5>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text">Leads</p>
+                                    <div class="legend-container">
+                                        <div class="legend-text">
+                                            <span class="legend-dot legend-returning"></span>Returning
+                                        </div>
+                                        <div class="legend-text">
+                                            <span class="legend-dot legend-new"></span>New
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="analytics-chart-container">
+                                    <canvas id="leadsStatisticChart"></canvas>
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -227,6 +239,10 @@
                     border: {
                         display: false, // Remove the x-axis line itself
                     },
+                    ticks: {
+                         
+                            padding: 20,
+                        }
                 },
                     y: {
                         beginAtZero: true,
@@ -241,7 +257,8 @@
                         ticks: {
                             stepSize: 20, // Adjust step size
                             min: 20,
-                            max: 120
+                            max: 120,
+                            padding: 10,
                         }
                     }
                 },
@@ -281,6 +298,91 @@
     </script>
     
     
+
+    <script>
+        const ctx2 = document.getElementById('leadsStatisticChart').getContext('2d');
+        const leadsStatisticChart = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',],
+                datasets: [
+                    {
+                        label: 'Returning',
+                        data: [10, 13, 30, 35, 40, 50],
+                        borderColor: '#00B74A', // Green line
+                        backgroundColor: 'rgba(0, 183, 74, 0.1)', // Light green fill
+                        fill: false,
+                        borderWidth: 2,
+                        tension: 0.4, // Smoother curve
+                        pointBackgroundColor: '#00B74A',
+                        pointRadius: 3 
+                    },
+                    {
+                        label: 'New',
+                        data: [5, 9, 15, 25, 25, 45],
+                        borderColor: '#007BFF', // Blue line
+                        backgroundColor: 'rgba(0, 123, 255, 0.1)', // Light blue fill
+                        fill: false,
+                        borderWidth: 2,
+                        tension: 0.4, // Smoother curve
+                        pointBackgroundColor: '#007BFF',
+                        pointRadius: 3
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        grid: {
+                            display: false // Hide vertical grid lines
+                        },
+                        border: {
+                        display: false, // Remove the x-axis line itself
+                    },
+                    ticks: {
+                            padding: 20,
+                        },
+                    
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)', // Horizontal line color
+                            borderDash: [5, 5] // Dotted horizontal lines
+                        },
+                        ticks: {
+                            stepSize: 10,
+                            padding: 10,
+                        },
+                        border: {
+                        display: false, // Remove the x-axis line itself
+                    },
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                        position: 'top',
+                        labels: {
+                        usePointStyle: true, // Show circular markers for legend
+                        pointStyle: 'circle',
+                        boxWidth: 7, // Reduce legend point size
+                        boxHeight: 7
+                    }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.dataset.label + ': ' + tooltipItem.raw + '%';
+                            }
+                        }
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
 
 
 
