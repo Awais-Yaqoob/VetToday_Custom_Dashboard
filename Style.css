@@ -583,7 +583,7 @@ select{
 /* Create Discount page */
 
 .discount-form input, .discount-form textarea, .discount-form select{
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #F9F9F9;
 }
 .discount-form input::placeholder, .discount-form textarea::placeholder, .discount-form select::placeholder{
