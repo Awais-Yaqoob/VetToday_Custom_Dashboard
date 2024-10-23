@@ -241,6 +241,11 @@ body {
     color: #16A34A;
     border-color: #F0FDF4;
 }
+.btn-success:active {
+    background-color: #F0FDF4;
+    color: #16A34A;
+    border-color: #F0FDF4;
+}
 
 .btn-info {
     background-color: #EFF6FF;
@@ -572,3 +577,40 @@ select{
     box-shadow:none;
 }
 
+
+
+
+/* Create Discount page */
+
+.discount-form input, .discount-form textarea, .discount-form select{
+    border-radius: 10px;
+    background-color: #F9F9F9;
+}
+.discount-form input::placeholder, .discount-form textarea::placeholder, .discount-form select::placeholder{
+    color: #99A1B7;
+}
+
+.discount-form label{
+    color: #252F4A;
+    font-size: 15px;
+    font-weight: 600;
+}
+.discount-form .required-asterisk{
+    color: red;
+}
+.discount-form span{
+    color: #1B84FF;
+    font-weight: 600;
+}
+.save-draft-btn:hover {
+    background-color: #E1FDEB;
+    color: #17C653;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.save-draft-btn{
+    background-color: #E1FDEB;
+    color: #17C653;
+    border-radius: 6px;
+    font-size: 15px;
+}
